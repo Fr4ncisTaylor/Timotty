@@ -1,6 +1,6 @@
 # Timotty-Master
 
-##instalação
+## instalação
 
 clone o repositório:
 `git clone https://github.com/francis-taylor/Timotty-Master`
