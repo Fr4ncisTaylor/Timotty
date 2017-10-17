@@ -1,6 +1,6 @@
 # Timotty-Master
 
-*Versão 1.0*
+⚜️*Versão 1.0*
 
 ## Instalação
 
