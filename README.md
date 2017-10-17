@@ -1,3 +1,1 @@
-# Timotty
-
-##By Cybion Devs.
+![Timotty][https://t.me/cybion]
