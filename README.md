@@ -14,8 +14,8 @@ Execute a instalação:
 `./install.sh`
 
 ## configuração
-Abra o arquivo `config.py` e insira o token getado no [Bot Father](https://t.me/BotFather) no espaço *bot*
+Abra o arquivo `config.py` e insira o token gerado no [Bot Father](https://t.me/BotFather) no espaço *bot*
 
-Insira o seu ID no espaço `sudo` e os IDs dos adms no espaço resarvado ´adms´.
+Insira o seu ID no espaço `sudo` e os IDs dos adms no espaço resarvado `adms`.
 
 
