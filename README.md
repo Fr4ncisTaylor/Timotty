@@ -2,6 +2,6 @@
 
 ##instalação
 
-```git clone https://github.com/francis-taylor/Timotty-Master
+`git clone https://github.com/francis-taylor/Timotty-Master
    cd Timotty-Master
-   ./install.sh```
+   ./install.sh`
