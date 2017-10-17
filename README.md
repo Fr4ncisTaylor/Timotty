@@ -1,5 +1,5 @@
 # Timotty-Master
-![teste](imagem.png)
+![teste](images.png)
 
 ⚜️*Versão 1.0*
 
