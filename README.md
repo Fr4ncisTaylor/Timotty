@@ -1,4 +1,4 @@
-# Timotty-Master
+# 🤖Timotty-Master
 
 ⚜️*Versão 1.0*
 
