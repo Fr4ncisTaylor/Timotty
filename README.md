@@ -1,1 +1,1 @@
-![Timotty][https://raw.githubusercontent.com/wrxck/mattata/master/assets/setup.png]
+#Timotty -bot for telegram API
