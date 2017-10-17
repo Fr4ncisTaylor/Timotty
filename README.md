@@ -1,5 +1,7 @@
 # Timotty-Master
 
+*Versão 1.0*
+
 ## instalação
 
 clone o repositório:
