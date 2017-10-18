@@ -20,4 +20,12 @@ Abra o arquivo `config.py` e insira o token gerado no [Bot Father](https://t.me/
 
 Insira o seu ID no espaço `sudo` e os IDs dos adms no espaço resarvado `adms`.
 
+## Iniciando o projeto
+
+`python bot.py`
+
+### ou
+
+`nohup python bot.py`
+
 Agradeço ao [Murkiriel](https://t.me/Mkriel) por ter me ajudado com o projeto.
