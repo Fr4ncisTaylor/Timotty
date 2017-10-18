@@ -28,4 +28,7 @@ Insira o seu ID no espaço `sudo` e os IDs dos adms no espaço resarvado `adms`.
 
 `nohup python bot.py`
 
+
+## agradecimentos
+
 Agradeço ao [Murkiriel](https://t.me/Mkriel) por ter me ajudado com o projeto.
