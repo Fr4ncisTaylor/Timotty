@@ -12,7 +12,7 @@ Entre no diretório:
 `cd Timotty-Master`
 
 Execute a instalação:
-`./install.sh`
+`python install.py`
 
 ## configuração
 Abra o arquivo `config.py` e insira o token gerado no [Bot Father](https://t.me/BotFather) no espaço `bot`
