@@ -3,10 +3,10 @@ import json
 
 def make_url(self):
     keyboard = {}
-    ia = []
+    add = []
 
     for i in self:
-        ia.append(i)
+        add.append(i)
 
-    keyboard['inline_keyboard'] = ia
+    keyboard['inline_keyboard'] = add
     return json.dumps(keyboard)
