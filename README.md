@@ -3,6 +3,7 @@
 
 ⚜️*Versão 1.0*
 
+*Python 2.7*
 ## Instalação
 
 Clone o repositório:
