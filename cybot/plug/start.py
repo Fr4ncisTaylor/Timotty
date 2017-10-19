@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import mensagens
-from inline import make_url
+from inline import inline_keyboad
 from metodos import *
 
 m = mensagens
@@ -18,5 +18,5 @@ def start(msg):
             keyboard = [[{'text': m.start['bot1'], 'url': config.grupo_url}] +
                         [{'text':m.start['bot2'], 'url': mensagens.creditos['url']}]]
 
-            markup = make_url(keyboard)
+            markup = inline_keyboard(keyboard)
             sendMessage(chat_id, m.start['mensagem'].format(nome), reply_markup=markup)
