@@ -1,18 +1,4 @@
- 		bot.py
-		comandos.py
-		config.py
-		cybot/__init__.py
-		images.png
-		inline.py
-		install.py
-		mensagens.py
-		metodos.py
-		plug/Taylang.py
-		plug/__init__.py
-		plug/banhammer.py
-		plug/clima.py
-		plug/comands.py
-		plug/ia.py# -*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 from cybot.aiml import Kernel
 from cybot import config
@@ -23,21 +9,8 @@ kernel = Kernel()
 kernel.learn(config.ia['mae'])
 kernel.respond(config.ia['cerebro'])
 
- 		bot.py
-		comandos.py
-		config.py
-		cybot/__init__.py
-		images.png
-		inline.py
-		install.py
-		mensagens.py
-		metodos.py
-		plug/Taylang.py
-		plug/__init__.py
-		plug/banhammer.py
-		plug/clima.py
-		plug/comands.py
-		plug/ia.py
+ 		
+		
 def cmd(msg):
     if msg['text'].startswith('/add'):
         if msg['from']['id'] == sudo:
