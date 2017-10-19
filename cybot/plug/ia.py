@@ -68,7 +68,7 @@ def conversa(msg):
         if msg['chat']['type'] == 'supergroup' or msg['chat']['type'] == 'group':
 
             try:
-                reply = msg['reply_to_message']['from']['id'] == getMe()['id']
+                reply = msg['reply_to_message']['from']['id'] == getMe()['result']['id']
 
             except:
                 reply = 0
