@@ -133,6 +133,7 @@ Execute a instalação:
 * [editMessageText](https://github.com/francis-taylor/Timotty-Master/blob/master/exemplos/editMessageText)
         
 * * *
-## Agradecimentos
+## Créditos
 
-Agradeço ao [Murkiriel](https://t.me/Mkriel) por ter me ajudado com o projeto.
+* [Murkiriel](https://t.me/Mkriel) - Ajuda com o Threads.
+* [Wesley Henr](https://t.me/Wesley_Henr) - Ajuda com o ReadMe.
