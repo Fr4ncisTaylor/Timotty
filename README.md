@@ -33,19 +33,19 @@ Comandos Normais
       <td>Traduz um texto de qualquer idioma para o portugês.</td>
     </tr>
     <tr>
-      <td>Qr</td>
-      <td>/qr [url/texto]</td>
-      <td>Envia um Qr Code do site ou texto informado.</td>
-    </tr>
+     <td>Qr</td>
+     <td>/qr [url/texto]</td>
+     <td>Envia um Qr Code do site ou texto informado.</td>
+   </tr>
     <tr>
       <td>Ban</td>
-      <td>/ban (reply)</td>
+   <td>/ban (reply)</td>
       <td>Bane o membro do chat.</td>
     </tr>
     <tr>
       <td>Desban</td>
       <td>/desban (reply)</td>
-      <td>Desbane o membro do chat.</td>
+     <td>Desbane o membro do chat.</td>
     </tr>
     <tr>
       <td>Kick</td>
@@ -75,7 +75,7 @@ Comando Sudo
       <td>Run</td>
       <td>/run (on/off)</td>
       <td>Liga ou desliga o bot.</td>
-   </tr>
+    </tr>
   </tbody>
 </table>
 
