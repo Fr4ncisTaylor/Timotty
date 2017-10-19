@@ -16,7 +16,7 @@ Execute a instalação:
 `python install.py`
 
 ## Configuração
-Abra o aqruivo `cybot/config.py` e insira o ID dos Administradores do bot em `adms = [000000,111111,22222]`, insira o seu ID no espaço `sudo =  0000000`, e coloque o token do seu bot que foi gerado pelo [Bot Father](https://t.me/BotFather) no `bot = '110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw'`
+Abra o arquivo `cybot/config.py` e insira o ID dos Administradores do bot em `adms = [000000,111111,22222]`, insira o seu ID no espaço `sudo =  0000000`, e coloque o token do seu bot que foi gerado pelo [Bot Father](https://t.me/BotFather) no `bot = '110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw'`
 
 ## Iniciando o bot
 
