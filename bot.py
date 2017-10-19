@@ -27,6 +27,29 @@ class Th(Thread) :
         if self.msgs.get('message', None) is not None :
             msg = self.msgs['message']
             content_type = 'text'
+        elif self.msgs.get('edited_message', None) is not None :
+            msg = self.msgs['edited_message']
+
+        elif self.msgs.get('channel_post', None) is not None :
+            msg = self.msgs['channel_post']
+
+        elif self.msgs.get('edited_channel_post', None) is not None :
+            msg = self.msgs['edited_channel_post']
+
+        elif self.msgs.get('inline_query', None) is not None :
+            msg = self.msgs['inline_query']
+
+        elif self.msgs.get('chosen_inline_result', None) is not None :
+            msg = self.msgs['chosen_inline_result']
+
+        elif self.msgs.get('callback_query', None) is not None :
+            msgs = self.msgs['callback_query']
+
+        elif self.msgs.get('shipping_query', None) is not None :
+            msg = self.msgs['shipping_query']
+
+        elif self.msgs.get('pre_checkout_query', None) is not None :
+            msg = self.msgs['pre_checkout_query']
 
         else :
             return
@@ -34,8 +57,10 @@ class Th(Thread) :
         if (time.time() - msg['date']) > config.timer :
             return
 
+        if content_type == 'text':
+            comandos(msg)## importando os comandos para dentro do bot
+            return
 
-        comandos(msg)## importando os comandos para dentro do bot
 
 dados_bot = bot.getMe()
 threads = config.th

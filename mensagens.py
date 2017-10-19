@@ -21,6 +21,9 @@ Comandos disponíveis:
 `/start` - Inicia o bot.
 `/id` - Informaçãoes sobre seu perfil.
 `/print` *[url]* - envia um print do site informado.
+`/traduza` *[texto]* - traduz o texto informado.
+`/qr` *[texto]* - gera um Qr code.
+
 #Banhammer
 
 `/ban` *[por resposta]* - Bane um membro.
@@ -30,7 +33,7 @@ Comandos disponíveis:
 ## /ID
 myid = {'private':'⚜️Suas Informações⚜️\n\n👤 Nome: {}\n👤 Id: {}\n👤 Username: {}\n🔮 chat: privado','group' : '⚜️Suas Informações⚜️\n\n👤 Nome: {}\n👤 Id: {}\n👤 Username: {}\n🔮 chat: Grupo'}
 
-regras ={'definidas' : '_As regras foram definidas com sucesso!_'}
+regras_ ={'definidas' : '_As regras foram definidas com sucesso!_'}
 
 ## /BAN
 ban = {    'banido' :  '{} foi banido.',
