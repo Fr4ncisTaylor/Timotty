@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 
-def make_url(self):
+def inline_keyboard(self):
     keyboard = {}
     ia = []
 
