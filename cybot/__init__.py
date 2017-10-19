@@ -1,4 +1,9 @@
 __all__ = []
 
-# The Kernel class is the only class most implementations should need.
-from .Kernel import Kernel
+import bot
+import comandos
+import config
+import inline
+import install
+import mensagens
+import metodos

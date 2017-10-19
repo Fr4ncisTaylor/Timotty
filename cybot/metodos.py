@@ -11,7 +11,7 @@ api_bot = api + bot
 def getMe() :
     url = api_bot + '/getMe'
     r = requests.post(url)
-    jsons = json.loads(r.content)['result']
+    jsons = json.loads(r.content.decode('utf8'))
     return jsons
 
 def getUpdates( allowed_updates = None,limit = None,offset = None,timeout = None) :
@@ -21,7 +21,7 @@ def getUpdates( allowed_updates = None,limit = None,offset = None,timeout = None
                         'offset' : offset,
                        'timeout' : timeout}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### MESSAGE  #####
 def sendMessage(chat_id, text,parse_mode=None,disable_web_page_preview=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -34,7 +34,7 @@ def sendMessage(chat_id, text,parse_mode=None,disable_web_page_preview=None,disa
          'reply_to_message_id' : reply_to_message_id,
                         'text' : text,}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decote('utf8'))
 
 def replyMessage(chat_id, text,disable_notification=None,disable_web_page_preview=None,parse_mode=None,reply_markup=None,reply_to_message_id=None) :
     url = api_bot + '/sendMessage'

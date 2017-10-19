@@ -7,12 +7,6 @@ import config
 from plug.ia import conversa
 from plug import banhammer,comands,myid,newmember,printar,promover,start,tradutor,regras,qr
 
-''' caso você use linux, mantenha o sisteminha encode abaixo...'''
-
-## default encoding
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 ### redis server
 redis = redis.StrictRedis(host=config.redis['host'], port=config.redis['port'], db=config.redis['db'])
 
@@ -26,8 +20,11 @@ def comandos(msg):
                 redis.hset('run', 'status', '{}'.format(cmd))
                 sendMessage(msg['chat']['id'], 'Alterando as configurações para *{}*'.format(cmd),"markdown")
                 return
+        try:status = redis.hgetall('run')['status']
+        except:
+            status = 'on'
 
-        if redis.hgetall('run')['status'] == 'on':
+        if status == 'on':
 
             regras.regras(msg) # modulo de regras
 

@@ -18,7 +18,6 @@ redis = {     'erro' : 'Erro no redis⚠️',
 comands = {'mensagem' : '''
 Comandos disponíveis:
 
-`/start` - Inicia o bot.
 `/id` - Informaçãoes sobre seu perfil.
 `/print` *[url]* - envia um print do site informado.
 `/traduza` *[texto]* - traduz o texto informado.

@@ -67,8 +67,8 @@ threads = config.th
 offset = config.offset
 
 if len(config.bot) > 10:
-    print creditos['mensagem'].format(metodos.getMe()['first_name'],metodos.getMe()['username'])
-    print creditos['creditos'].format(creditos['autor'],creditos['url'],creditos['user'])
+    print(creditos['mensagem'].format(metodos.getMe()['result']['first_name'],metodos.getMe()['result']['username']))
+    print(creditos['creditos'].format(creditos['autor'],creditos['url'],creditos['user']))
 else:
     print('Token inválida.')
     sys.exit()
