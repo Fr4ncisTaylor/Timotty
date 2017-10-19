@@ -6,7 +6,7 @@
 
 [Suporte](https://t.me/RoboTaylor)
 
-⚜️**Versão 1.1 | Python 2.7**
+⚜️**Versão 1.1 | Python 3+**
 
 * * *
 ## Informações
