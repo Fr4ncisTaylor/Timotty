@@ -337,7 +337,10 @@ def setChatDescription(chat_id,description):
     return json.loads(r.content.decode('utf8'))
 
 #### EDITS
-def editMessageText(text,chat_id=None,message_id=None,inline_message_id=None,parse_mode=None,disable_web_page_preview=None,reply_markup=None):
+def editMessageText(idf,text,inline_message_id=None,parse_mode=None,disable_web_page_preview=None,reply_markup=None):
+    chat_id = idf['chat_id']
+    message_id = idf['msg_id']
+
     url = api_bot + '/editMessageText'
     payload = {'chat_id': chat_id,
                'message_id': message_id,

@@ -5,14 +5,15 @@ import redis
 from metodos import sendMessage
 import config
 from plug.ia import conversa
-from plug import banhammer,comands,myid,newmember,printar,promover,start,tradutor,regras,qr
+from plug import banhammer,comands,myid,newmember,printar,promover,start,tradutor,regras,qr,info
 
 ### redis server
 redis = redis.StrictRedis(host=config.redis['host'], port=config.redis['port'], db=config.redis['db'])
 
 ### plugins
-def comandos(msg):
-    if 'text' in msg:
+def comandos(msg,content_type):
+
+    if content_type == 'text':
 
         if msg['text'].startswith('/run'):
             if msg['from']['id'] == config.sudo:
@@ -47,3 +48,5 @@ def comandos(msg):
             tradutor.traduzir(msg) #modulo de tradução
 
             qr.make_qr(msg) #  modulo co comando /qr
+    if content_type == 'callback':
+        info.infos(msg)
