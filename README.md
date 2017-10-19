@@ -18,7 +18,7 @@ Comandos Normais
   </thead>
   <tbody>
     <tr>
-      <td>ID</td>
+      <td>Id</td>
       <td>/id (Reply)</td>
       <td>Exibe informações sobre o perfil do usuário.</td>
     </tr>
@@ -28,34 +28,34 @@ Comandos Normais
       <td>Envia um print do site informado.</td>
     </tr>
     <tr>
-+      <td>TRADUZA</td>
++      <td>Traduza</td>
 +      <td>/traduza [texto]</td>
 +      <td>Traduz um texto de qualquer idioma para o portugês.</td>
 +    </tr>
     <tr>
-+      <td>QR</td>
++      <td>Qr</td>
 +      <td>/qr [url/texto]</td>
 +      <td>Envia um Qr Code do site ou texto informado.</td>
 +    </tr>
     <tr>
-+      <td>BAN</td>
++      <td>Ban</td>
 +      <td>/ban (reply)</td>
 +      <td>Bane o membro do chat.</td>
 +    </tr>
     <tr>
-+      <td>DESBAN</td>
++      <td>Desban</td>
 +      <td>/desban (reply)</td>
 +      <td>Desbane o membro do chat.</td>
 +    </tr>
     <tr>
-+      <td>KICK</td>
++      <td>Kick</td>
 +      <td>/kick (reply)</td>
 +      <td>Remove o membro do chat.</td>
 +    </tr>
   </tbody>
 </table>
 
-Comandos Sudos
+Comando Sudo
 ------------
 <table>
   <thead>
@@ -67,12 +67,12 @@ Comandos Sudos
   </thead>
   <tbody>
     <tr>
-      <td>PROMOVER</td>
+      <td>Promover</td>
       <td>/promover [texto]</td>
       <td>Promove uma divulgação nos chats privados.</td>
     </tr>
     <tr>
-      <td>RUN</td>
+      <td>Run</td>
       <td>/run (on/off)</td>
       <td>Liga ou desliga o bot.</td>
     </tr>
