@@ -102,7 +102,10 @@ Entre no diretório:
 `cd Timotty-Master`
 
 Execute a instalação:
-`python install.py`
+
+* python 2: `python install2.py`
+
+* python 3: `python3 install3.py`
 
 * * *
 ## Configuração
