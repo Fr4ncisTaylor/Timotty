@@ -118,11 +118,15 @@ Execute a instalação:
 * * *
 ## Iniciando o bot
 
-`python bot.py`
+* python 2: `python bot.py`
+
+* python 3: `python3 bot.py`
 
 ### ou
 
-`nohup python bot.py`
+* python 2: `nohup python bot.py`
+
+* python 3: `nohup python3 bot.py`
 
 * * *
 ## Agradecimentos
