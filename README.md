@@ -133,7 +133,8 @@ Execute a instalação:
 
 ### Editar mensagens
 
-``` from inline import inline_keyboard, identifier, data
+```bash
+from inline import inline_keyboard, identifier, data
 from metodos import editMessageText
 
 def info(msg):
@@ -148,7 +149,8 @@ def info(msg):
     
     #identifica o retorno do botão
     if data == 'info':
-        editMessageText(idf,'Versão: 1.3\n', parse_mode='Markdown', reply_markup=markup) #edita a mensagem ```
+        editMessageText(idf,'Versão: 1.3\n', parse_mode='Markdown', reply_markup=markup) #edita a mensagem 
+        ```
         
 * * *
 ## Agradecimentos
