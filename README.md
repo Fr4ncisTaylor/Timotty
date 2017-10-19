@@ -1,12 +1,11 @@
 # Timotty-Master
-
 ![Timotty](images.png)
 
 [TimottyBot](https://t.me/TimottyBot)
 
 [Suporte](https://t.me/RoboTaylor)
 
-⚜️**Versão 1.1 | Python 2 ou 3+**
+⚜️**Versão 1.3 | Python 2 ou 3+**
 
 * * *
 ## Informações
