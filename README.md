@@ -1,11 +1,16 @@
-# Timotty-Master
-![teste](images.png)
+# Timotty-Mastes    
+![Timotty](images.png)
 
 [TimottyBot](https://t.me/TimottyBot)
 
 ⚜️**Versão 1.1 | Python 2.7**
-* * *
 
+* * *
+## Informações
+Timotty foi desenvolvido com as Threads nativa da linguagem Python.
+Ele ultiliza os métodos da API Telegram, que você pode encontar no arquivo `/cybot/metodos.py`.
+
+* * *
 Comandos Normais
 ------------
 <table>
