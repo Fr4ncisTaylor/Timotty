@@ -28,30 +28,30 @@ Comandos Normais
       <td>Envia um print do site informado.</td>
     </tr>
     <tr>
-+      <td>Traduza</td>
-+      <td>/traduza [texto]</td>
-+      <td>Traduz um texto de qualquer idioma para o portugês.</td>
-+    </tr>
+      <td>Traduza</td>
+      <td>/traduza [texto]</td>
+      <td>Traduz um texto de qualquer idioma para o portugês.</td>
+    </tr>
     <tr>
-+      <td>Qr</td>
-+      <td>/qr [url/texto]</td>
-+      <td>Envia um Qr Code do site ou texto informado.</td>
-+    </tr>
+      <td>Qr</td>
+      <td>/qr [url/texto]</td>
+      <td>Envia um Qr Code do site ou texto informado.</td>
+    </tr>
     <tr>
-+      <td>Ban</td>
-+      <td>/ban (reply)</td>
-+      <td>Bane o membro do chat.</td>
-+    </tr>
+      <td>Ban</td>
+      <td>/ban (reply)</td>
+      <td>Bane o membro do chat.</td>
+    </tr>
     <tr>
-+      <td>Desban</td>
-+      <td>/desban (reply)</td>
-+      <td>Desbane o membro do chat.</td>
-+    </tr>
+      <td>Desban</td>
+      <td>/desban (reply)</td>
+      <td>Desbane o membro do chat.</td>
+    </tr>
     <tr>
-+      <td>Kick</td>
-+      <td>/kick (reply)</td>
-+      <td>Remove o membro do chat.</td>
-+    </tr>
+      <td>Kick</td>
+      <td>/kick (reply)</td>
+      <td>Remove o membro do chat.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -60,22 +60,22 @@ Comando Sudo
 <table>
   <thead>
     <tr>
-+      <td><strong>Comando</strong></td>
-+      <td><strong>Uso</strong></td>
-+      <td><strong>Descrição</strong></td>
-+    </tr>
+      <td><strong>Comando</strong></td>
+      <td><strong>Uso</strong></td>
+      <td><strong>Descrição</strong></td>
+    </tr>
   </thead>
   <tbody>
     <tr>
-+      <td>Promover</td>
-+      <td>/promover [texto]</td>
-+      <td>Promove uma divulgação nos chats privados.</td>
-+    </tr>
+      <td>Promover</td>
+      <td>/promover [texto]</td>
+      <td>Promove uma divulgação nos chats privados.</td>
+    </tr>
     <tr>
-+      <td>Run</td>
-+      <td>/run (on/off)</td>
-+      <td>Liga ou desliga o bot.</td>
-+   </tr>
+      <td>Run</td>
+      <td>/run (on/off)</td>
+      <td>Liga ou desliga o bot.</td>
+   </tr>
   </tbody>
 </table>
 * * *
