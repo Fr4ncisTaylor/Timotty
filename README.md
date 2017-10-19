@@ -4,6 +4,8 @@
 
 [TimottyBot](https://t.me/TimottyBot)
 
+[Suporte](https://t.me/RoboTaylor)
+
 ⚜️**Versão 1.1 | Python 2.7**
 
 * * *
@@ -81,6 +83,11 @@ Comando Sudo
       <td>Run</td>
       <td>/run (on/off)</td>
       <td>Liga ou desliga o bot.</td>
+    </tr>
+    <tr>
+      <td>Add</td>
+      <td>/add [pergunta|resposta]</td>
+      <td>Adiciona a pergunta e a resposta na I.A do bot.</td>
     </tr>
   </tbody>
 </table>
