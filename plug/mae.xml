@@ -1,0 +1,9 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>RESPONDA</pattern>
+        <template>
+            <learn>aiml/cerebro/manual.aiml</learn>
+        </template>
+    </category>
+
+</aiml>
