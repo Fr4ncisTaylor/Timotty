@@ -1,4 +1,5 @@
-# Timotty-Master  
+# Timotty-Master
+
 ![Timotty](images.png)
 
 [TimottyBot](https://t.me/TimottyBot)
