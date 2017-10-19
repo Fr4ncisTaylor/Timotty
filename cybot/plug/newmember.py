@@ -1,8 +1,8 @@
 #coding:utf-8 -*-
-import cybot.config, cybot.metodos
-from cybot.mensagens import bemvindo
+import config, metodos
+from mensagens import bemvindo
 from pprint import *
-from cybot.metodos import sendMessage
+from metodos import sendMessage
 
 def welcome(msg):
     if 'new_chat_member' in msg:

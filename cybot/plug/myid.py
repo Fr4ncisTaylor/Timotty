@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import cybot.config
-from cybot.metodos import *
-from cybot.mensagens import myid
+import config
+from metodos import *
+from mensagens import myid
 
 def my_id(msg):
     chat_id = msg['chat']['id']

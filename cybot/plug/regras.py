@@ -1,11 +1,11 @@
 # -*- coding:utf-8 -*-
-from cybot.mensagens import *
-from cybot.metodos import sendMessage
-from cybot.config import adms,sudo
-import cybot.config
+from mensagens import *
+from metodos import sendMessage
+from config import adms,sudo
+import config
 import redis
 
-rediss = redis.StrictRedis(host=cybot.config.redis['host'], port=cybot.config.redis['port'], db=cybot.config.redis['db'])
+rediss = redis.StrictRedis(host=config.redis['host'], port=config.redis['port'], db=config.redis['db'])
 
 def regras(msg):
 

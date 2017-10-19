@@ -1,16 +1,15 @@
 # -*- coding:utf-8 -*-
 
-from cybot.aiml import Kernel
-from cybot import config
-from cybot.metodos import sendMessage,getMe,sendChatAction
-from cybot.config import sudo
+from aiml import Kernel
+import config
+from metodos import sendMessage,getMe,sendChatAction
+from config import sudo
 import sys,time,os
 kernel = Kernel()
 kernel.learn(config.ia['mae'])
 kernel.respond(config.ia['cerebro'])
 
- 		
-		
+
 def cmd(msg):
     if msg['text'].startswith('/add'):
         if msg['from']['id'] == sudo:
@@ -28,7 +27,7 @@ def leia(arquivo):
     line = aiml.readlines()  # le as linhas do arquivo
     line = '{}'.format(line[-1])  # pega a ultima linha e formata como string caso nao seja
 
-    print 'line: ' + line  ## printa a linha no terminal
+    print('line: ' + line)  ## printa a linha no terminal
     aiml.close()  # fecha o arquivo
 
     ### LÊ O ARQUIVO INTEIRO
@@ -45,8 +44,8 @@ def escreva(pergunta, resposta):
     arquivo = "/home/francis/Área de Trabalho/cybot/aiml/cerebro/manual.aiml"
     read = leia(arquivo)  # importa os resultados da funçao leia
 
-    print pergunta
-    print resposta
+    print(pergunta)
+    print(resposta)
     msg = '''{}
     <category>
         <pattern>{}</pattern>

@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
-
+from metodos import *
 import redis
-
-from cybot import mensagens
-from cybot.metodos import *
+import mensagens
 
 redis = redis.StrictRedis(host=config.redis['host'], port=config.redis['port'], db=config.redis['db'])
-m = mensagens
 
 def promover(msg):
+
     if 'text' in msg:
-        texto = msg[u'text'].encode('utf-8')
+        texto = msg[u'text']
         chat_id = msg['chat']['id']
         nome = msg['from'][u'first_name']
         from_id = msg['from']['id']
@@ -40,7 +38,7 @@ def promover(msg):
                         except:
                             N += 1
 
-                    sendMessage(chat_id,m.promover.format(Y,N,mensagem))
+                    sendMessage(chat_id,promover.format(Y,N,mensagem))
 
                 else:
-                    sendMessage(chat_id,m.redis['erro'])
+                    sendMessage(chat_id,mensagens.redis['erro'])

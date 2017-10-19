@@ -1,7 +1,6 @@
-from cybot import mensagens
-from cybot.metodos import *
+from mensagens import *
+from metodos import *
 
-m = mensagens
 
 def comands(msg):
     if 'text' in msg:
@@ -11,5 +10,5 @@ def comands(msg):
         from_id = msg['from']['id']
 
         if texto == '/comandos':
-            sendMessage(chat_id, m.comands['mensagem'].format(nome), parse_mode='Markdown')
+            sendMessage(chat_id, comands['mensagem'].format(nome), parse_mode='Markdown')
 

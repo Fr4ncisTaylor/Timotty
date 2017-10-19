@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from cybot import mensagens
-from cybot.inline import make_url
-from cybot.metodos import *
+import mensagens
+from inline import make_url
+from metodos import *
 
 m = mensagens
 
 def start(msg):
     if 'text' in msg:
-        texto = msg[u'text'].encode('utf-8')
+        texto = msg[u'text']
         chat_id = msg['chat']['id']
         nome = msg['from'][u'first_name']
         from_id = msg['from']['id']

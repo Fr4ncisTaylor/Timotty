@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from cybot.config import apis
-from cybot.metodos import sendPhoto
+from config import apis
+from metodos import sendPhoto
 
 def printar(msg):
     if msg['text'].startswith('/print'):

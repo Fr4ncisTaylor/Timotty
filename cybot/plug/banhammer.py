@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
 
-import cybot.config
-from cybot.metodos import *
-from cybot.mensagens import *
+import config
+from metodos import *
+from mensagens import *
 
 
 adms = config.adms
