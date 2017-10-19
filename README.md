@@ -6,7 +6,7 @@
 ⚜️**Versão 1.1 | Python 2.7**
 * * *
 
-Comandos
+Comandos Normais
 ------------
 <table>
   <thead>
@@ -27,9 +27,57 @@ Comandos
       <td>/print [url]</td>
       <td>Envia um print do site informado.</td>
     </tr>
+    <tr>
++      <td>TRADUZA</td>
++      <td>/traduza [texto]</td>
++      <td>Traduz um texto de qualquer idioma para o portugês.</td>
++    </tr>
+    <tr>
++      <td>QR</td>
++      <td>/qr [url/texto]</td>
++      <td>Envia um Qr Code do site ou texto informado.</td>
++    </tr>
+    <tr>
++      <td>BAN</td>
++      <td>/ban (reply)</td>
++      <td>Bane o membro do chat.</td>
++    </tr>
+    <tr>
++      <td>DESBAN</td>
++      <td>/desban (reply)</td>
++      <td>Desbane o membro do chat.</td>
++    </tr>
+    <tr>
++      <td>KICK</td>
++      <td>/kick (reply)</td>
++      <td>Remove o membro do chat.</td>
++    </tr>
   </tbody>
 </table>
 
+Comandos Sudos
+------------
+<table>
+  <thead>
+    <tr>
+      <td><strong>Comando</strong></td>
+      <td><strong>Uso</strong></td>
+      <td><strong>Descrição</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PROMOVER</td>
+      <td>/promover [texto]</td>
+      <td>Promove uma divulgação nos chats privados.</td>
+    </tr>
+    <tr>
+      <td>RUN</td>
+      <td>/run (on/off)</td>
+      <td>Liga ou desliga o bot.</td>
+    </tr>
+  </tbody>
+</table>
 * * *
 ## Instalação
 
