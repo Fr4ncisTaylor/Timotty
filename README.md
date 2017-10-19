@@ -130,8 +130,9 @@ Execute a instalação:
 * * *
 ## Exemplos
 
-* [editMessageText](https://github.com/francis-taylor/Timotty-Master/blob/master/exemplos/editMessageText)
-        
+* [editMessageText](https://github.com/francis-taylor/Timotty-Master/blob/master/exemplos/editMessageText) - Editar mensagens
+* [sendMessage](https://github.com/francis-taylor/Timotty-Master/blob/master/exemplos/sendMessage) - Enviar mensagens.
+ 
 * * *
 ## Créditos
 
