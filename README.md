@@ -131,26 +131,7 @@ Execute a instalação:
 * * *
 ## Exemplos
 
-### Editar mensagens
-
-```bash
-from inline import inline_keyboard, identifier, data
-from metodos import editMessageText
-
-def info(msg):
-    idf = identifier(msg) #identifica a mensagem
-    
-    #define o teclado
-    keyboard = [[{'text': '☕️Github', 'url': 'https://github.com/francis-taylor/Timotty-Master'}] + 
-               [{'text': '👤Dev', 'url': 'https://t.me/francistaylor'}]]
-    
-    #formata o teclado
-    markup = inline_keyboard(keyboard)
-    
-    #identifica o retorno do botão
-    if data == 'info':
-        editMessageText(idf,'Versão: 1.3\n', parse_mode='Markdown', reply_markup=markup) #edita a mensagem 
-```
+* [editMessageText](https://github.com/francis-taylor/Timotty-Master/blob/master/exemplos/editMessageText)
         
 * * *
 ## Agradecimentos
