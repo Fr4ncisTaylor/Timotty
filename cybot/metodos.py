@@ -34,7 +34,7 @@ def sendMessage(chat_id, text,parse_mode=None,disable_web_page_preview=None,disa
          'reply_to_message_id' : reply_to_message_id,
                         'text' : text,}
     r = requests.post(url, data=payload)
-    return json.loads(r.content.decote('utf8'))
+    return json.loads(r.content.decode('utf8'))
 
 def replyMessage(chat_id, text,disable_notification=None,disable_web_page_preview=None,parse_mode=None,reply_markup=None,reply_to_message_id=None) :
     url = api_bot + '/sendMessage'
@@ -46,7 +46,7 @@ def replyMessage(chat_id, text,disable_notification=None,disable_web_page_previe
          'reply_to_message_id' : reply_to_message_id,
                         'text' : text,}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def forwardMessage(chat_id, from_chat_id, message_id,disable_notification=None):
     url = api_bot + '/forwardMessage'
@@ -55,7 +55,7 @@ def forwardMessage(chat_id, from_chat_id, message_id,disable_notification=None):
                 'message_id' : message_id,
       'disable_notification' : disable_notification,}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### STICKER
 def sendSticker(chat_id,sticker,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -66,7 +66,7 @@ def sendSticker(chat_id,sticker,disable_notification=None,reply_to_message_id=No
                'reply_to_message_id': reply_to_message_id,
                'sticker': sticker, }
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### PHOTO
 def sendPhoto(chat_id,photo,caption=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -80,7 +80,7 @@ def sendPhoto(chat_id,photo,caption=None,disable_notification=None,reply_to_mess
               'reply_markup' : reply_markup,}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### AUDIO
 def sendAudio(chat_id, audio,caption=None,duration=None,performer=None,title=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -96,7 +96,7 @@ def sendAudio(chat_id, audio,caption=None,duration=None,performer=None,title=Non
               'reply_markup' : reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### DOCUMENT
 def sendDocument(chat_id, document,caption=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -110,7 +110,7 @@ def sendDocument(chat_id, document,caption=None,disable_notification=None,reply_
                'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### VIDEO
 def sendVideo(chat_id, video,duration=None,width=None,height=None,caption=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -126,7 +126,7 @@ def sendVideo(chat_id, video,duration=None,width=None,height=None,caption=None,d
                'reply_to_message_id': reply_to_message_id,
                'reply_markup': reply_markup}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def sendVideoNote(chat_id, video_note,duration=None,length=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
 
@@ -139,7 +139,7 @@ def sendVideoNote(chat_id, video_note,duration=None,length=None,disable_notifica
                'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### VOICE
 def sendVoice(chat_id, voice,caption=None,duration=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -154,7 +154,7 @@ def sendVoice(chat_id, voice,caption=None,duration=None,disable_notification=Non
                'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### lOCATION
 def sendLocation(chat_id, latitude, longitude,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -166,7 +166,7 @@ def sendLocation(chat_id, latitude, longitude,disable_notification=None,reply_to
                'reply_to_message_id': reply_to_message_id,
                'reply_markup': reply_markup}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### VENUE
 def sendVenue(chat_id, latitude, longitude,title,address,foursquare_id=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -181,7 +181,7 @@ def sendVenue(chat_id, latitude, longitude,title,address,foursquare_id=None,disa
               'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### CONTACT
 def sendContact(chat_id, phone_number, first_name,last_name=None,disable_notification=None,reply_to_message_id=None,reply_markup=None):
@@ -195,7 +195,7 @@ def sendContact(chat_id, phone_number, first_name,last_name=None,disable_notific
                'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ######### CHAT ACTION
 def sendChatAction(chat_id, action):
@@ -205,7 +205,7 @@ def sendChatAction(chat_id, action):
                }
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 #### PIN/UNPIN ####
 def pinChatMessage(chat_id, message_id,disable_notification=None):
@@ -216,13 +216,13 @@ def pinChatMessage(chat_id, message_id,disable_notification=None):
                }
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def unpinChatMessage(chat_id):
     url = api_bot + '/unpinChatMessage'
     payload = {'chat_id': chat_id}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 #### LEAVE
 def leaveChat(chat_id):
@@ -230,7 +230,7 @@ def leaveChat(chat_id):
     payload = {'chat_id': chat_id, }
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 #### GETS
 def getChat(chat_id):
@@ -238,26 +238,26 @@ def getChat(chat_id):
     payload = {'chat_id': chat_id, }
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def getChatAdministrators(chat_id):
     url = api_bot + '/getChatAdministrators'
     payload = {'chat_id': chat_id, }
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def getChatMembersCount(chat_id):
     url = api_bot + '/getChatMembersCount'
     payload = {'chat_id': chat_id, }
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def getChatMember(chat_id, user_id):
     url = api_bot + '/getChatMember'
     payload = {'chat_id': chat_id,
                'user_id' : user_id}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 ### BANHAMMER
 def kickChatMember(chat_id,user_id):
@@ -265,7 +265,7 @@ def kickChatMember(chat_id,user_id):
     payload = {'chat_id': chat_id,
                'user_id': user_id}
     r = requests.post(url, data=payload)
-    j = json.loads(r.content)
+    j = json.loads(r.content.decode('utf8'))
 
     return j
 
@@ -274,7 +274,7 @@ def unbanChatMember(chat_id,user_id):
     payload = {'chat_id': chat_id,
                'user_id': user_id}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def restrictChatMember(chat_id,user_id,until_date=None,can_send_message=None,can_send_media_messages_=None,can_send_other_messages=None,can_add_web_page_previews=None):
     url = api_bot + '/restrictChatMember'
@@ -287,7 +287,7 @@ def restrictChatMember(chat_id,user_id,until_date=None,can_send_message=None,can
                'can_add_web_page_previews': can_add_web_page_previews}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def promoteChatMember(chat_id,user_id,can_change_info=None,can_post_message=None,can_edit_messages=None,can_delete_messages=None,can_invite_users=None,can_restrict_members=None,can_pin_messages=None,can_promote_members=None):
     url = api_bot + '/promoteChatMember'
@@ -303,14 +303,14 @@ def promoteChatMember(chat_id,user_id,can_change_info=None,can_post_message=None
                'can_promote_members' : can_promote_members}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def exportChatInviteLink(chat_id):
     url = api_bot + '/exportChatInviteLink'
     payload = {'chat_id': chat_id, }
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def setChatPhoto(chat_id,photo):
     url = api_bot + '/setChatPhoto'
@@ -318,7 +318,7 @@ def setChatPhoto(chat_id,photo):
                'photo' : photo}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def setChatTitle(chat_id,title):
     url = api_bot + '/setChatTitle'
@@ -326,7 +326,7 @@ def setChatTitle(chat_id,title):
                'title' : title}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def setChatDescription(chat_id,description):
     url = api_bot + '/setChatDescripton'
@@ -334,7 +334,7 @@ def setChatDescription(chat_id,description):
                'description' : description}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 #### EDITS
 def editMessageText(text,chat_id=None,message_id=None,inline_message_id=None,parse_mode=None,disable_web_page_preview=None,reply_markup=None):
@@ -347,7 +347,7 @@ def editMessageText(text,chat_id=None,message_id=None,inline_message_id=None,par
                'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def editMessageCaption(caption,chat_id=None,message_id=None,inline_message_id=None,disable_web_page_preview=None,reply_markup=None):
     url = api_bot + '/editMessageCaption'
@@ -358,7 +358,7 @@ def editMessageCaption(caption,chat_id=None,message_id=None,inline_message_id=No
                'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def editMessageReplyMarkup(text,chat_id=None,message_id=None,inline_message_id=None,parse_mode=None,disable_web_page_preview=None,reply_markup=None):
     url = api_bot + '/editMessageReplyMarkup'
@@ -370,7 +370,7 @@ def editMessageReplyMarkup(text,chat_id=None,message_id=None,inline_message_id=N
                'reply_markup': reply_markup}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 #### DELETE
 def deleteMessage(chat_id,message_id):
@@ -379,14 +379,14 @@ def deleteMessage(chat_id,message_id):
                'message_id': message_id}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def deleteChatPhoto(chat_id):
     url = api_bot + '/deleteChatPhoto'
     payload = {'chat_id': chat_id}
 
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 #### GAME
 
@@ -398,7 +398,7 @@ def sendGame(chat_id,game_short_name,disable_notification=None,reply_to_message_
                'reply_markup': reply_markup,
                'reply_to_message_id': reply_to_message_id,}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def setGameScore(user_id,score,force=None,disable_edit_message=None,chat_id=None,message_id=None,inline_message_id=None):
     url = api_bot + '/sendGame'
@@ -410,7 +410,7 @@ def setGameScore(user_id,score,force=None,disable_edit_message=None,chat_id=None
                     'message_id' : message_id,
              'inline_message_id' : inline_message_id}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 def getGameHighScores(user_id,chat_id=None,message_id=None,inline_message_id=None):
     url = api_bot + '/sendGame'
@@ -419,7 +419,7 @@ def getGameHighScores(user_id,chat_id=None,message_id=None,inline_message_id=Non
                'message_id': message_id,
                'inline_message_id': inline_message_id}
     r = requests.post(url, data=payload)
-    return json.loads(r.content)
+    return json.loads(r.content.decode('utf8'))
 
 #### EXTRAS
 def run(self):
