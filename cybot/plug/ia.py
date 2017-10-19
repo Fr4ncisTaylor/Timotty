@@ -73,7 +73,7 @@ def conversa(msg):
             except:
                 reply = 0
 
-                if reply == getMe()['id']:
+                if reply == getMe()['result']['id']:
                     sendChatAction(msg['chat']['id'],'typing') ## envia o 'escrevendo...'
 
                     resposta = kernel.respond(msg['text']) ## resposta
