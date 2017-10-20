@@ -1,4 +1,3 @@
-```bash
 from metodos import sendReply ## Importa a função
 
 def exemplo(msg):
