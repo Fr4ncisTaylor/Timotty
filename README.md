@@ -129,7 +129,7 @@ Execute a instalação:
 
 * [editMessageText](exemplos/editMessageText.py) - Editar mensagens.
 * [sendMessage](exemplos/sendMessage.py) - Enviar mensagens.
-* [sendReply](exemplos/sendReply.py) - Reponde mensagens.
+* [sendReply](exemplos/sendReply.py) - Responde mensagens.
  
 * * *
 ## Créditos
