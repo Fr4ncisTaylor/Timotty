@@ -1,11 +1,8 @@
 # Timotty-Master
-![Timotty](images.png)
-
-[TimottyBot](https://t.me/TimottyBot)
-
-[Suporte](https://t.me/RoboTaylor)
-
-⚜️**Versão 1.3 | Python 2 ou 3+**
+<p align="center"><img src="images.png" alt="Timotty"></p>
+<p align="center"><a href="https://t.me/TimottyBot">TimottyBot</a></p>
+<p align="center"><a href="https://t.me/RoboTaylor">Suporte</a></p>
+<p align="center">⚜️<strong>Versão 1.3 | Python 2 ou 3+</strong></p>
 
 * * *
 ## Informações
