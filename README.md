@@ -127,8 +127,8 @@ Execute a instalação:
 * * *
 ## Exemplos
 
-* [editMessageText](exemplos/editMessageText) - Editar mensagens.
-* [sendMessage](exemplos/sendMessage) - Enviar mensagens.
+* [editMessageText](exemplos/editMessageText.py) - Editar mensagens.
+* [sendMessage](exemplos/sendMessage.py) - Enviar mensagens.
 * [sendReply](exemplos/sendReply.py) - Reponde mensagens.
  
 * * *
