@@ -19,9 +19,9 @@ comands = {'mensagem' : '''
 Comandos disponíveis:
 
 `/id` - Informaçãoes sobre seu perfil.
-`/print` *[url]* - envia um print do site informado.
-`/traduza` *[texto]* - traduz o texto informado.
-`/qr` *[texto]* - gera um Qr code.
+`/print` *[url]* - Envia um print do site informado.
+`/traduza` *[texto]* - Traduz o texto informado.
+`/qr` *[texto]* - Gera um Qr code.
 
 #Banhammer
 
@@ -45,7 +45,7 @@ erros = { 'not_adm' : 'Você não é um administrador deste chat.',
               'bug' : 'Ops! ocorreu um bug!'}
 
 ### POR FAVOR DEIXE OS CRÉDITOS,....
-creditos = {'mensagem':'O bot foi iniciado!\n\npor favor mantenha os créditos para que possamos evoluir o bot.\n\nNome:{}\nusername:{}',
+creditos = {'mensagem':'O bot foi iniciado!\n\nPor favor mantenha os créditos para que possamos evoluir o bot.\n\nNome:{}\nUsername:{}',
               'autor' : 'Francis Taylor',
                 'url' : 'https://t.me/FrancisTaylor',
                'user' : '@Francis_Taylor',
