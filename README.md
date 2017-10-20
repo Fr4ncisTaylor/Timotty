@@ -105,7 +105,7 @@ Execute a instalação:
 
 * * *
 ## Configuração
-* Abra o arquivo `cybot/config.py` e insira o ID dos Administradores do bot em `adms = [000000,111111,22222]`.
+* Abra o arquivo `cybot/config.py` e insira o ID dos administradores do bot em `adms = [000000,111111,22222]`.
 
 * Insira o seu ID no espaço `sudo =  0000000`.
 
@@ -127,8 +127,9 @@ Execute a instalação:
 * * *
 ## Exemplos
 
-* [editMessageText](https://github.com/francis-taylor/Timotty-Master/blob/master/exemplos/editMessageText) - Editar mensagens
-* [sendMessage](https://github.com/francis-taylor/Timotty-Master/blob/master/exemplos/sendMessage) - Enviar mensagens.
+* [editMessageText](exemplos/editMessageText) - Editar mensagens.
+* [sendMessage](exemplos/sendMessage) - Enviar mensagens.
+* [sendReply](exemplos/sendReply.py) - Reponde mensagens.
  
 * * *
 ## Créditos
