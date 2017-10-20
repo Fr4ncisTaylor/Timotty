@@ -7,13 +7,13 @@ if raw_input(u'Deseja iniciar instalação do Timotty para Python 2+ ? [Y/N]\n\n
     try:
         import requests
     except:
-        print(u'Instalando Requests')
-        os.system('pip install requests')
+        print(u'Instalando o Requests')
+        os.system('pip2 install requests')
     try:
         import redis
     except:
-        print(u'Instalando Redis-Server')
-        os.system('pip install redis')
+        print(u'Instalando o Redis-Server')
+        os.system('pip2 install redis')
 
     os.system('clear')
     print(u'Instalação concluída!')
@@ -21,7 +21,7 @@ if raw_input(u'Deseja iniciar instalação do Timotty para Python 2+ ? [Y/N]\n\n
     os.system('clear')
 
     if raw_input('Deseja iniciar Timotty? [Y/N]\n\n> '):
-        os.system('python bot.py')
+        os.system('python2 bot.py')
     else:
         os.system('clear')
         sys.exit()
