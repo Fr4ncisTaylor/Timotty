@@ -114,15 +114,15 @@ Execute a instalação:
 * * *
 ## Iniciando o bot
 
-* python 2: `python bot.py`
+* python 2: `python2 cybot/bot.py`
 
-* python 3: `python3 bot.py`
+* python 3: `python3 cybot/bot.py`
 
 ### ou
 
-* python 2: `nohup python bot.py`
+* python 2: `nohup python2 cybot/bot.py`
 
-* python 3: `nohup python3 bot.py`
+* python 3: `nohup python3 cybot/bot.py`
 
 * * *
 ## Exemplos

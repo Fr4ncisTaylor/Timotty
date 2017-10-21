@@ -14,6 +14,11 @@ if input(u'Deseja iniciar instalação do Timotty? [Y/N]\n\n>>> ').lower() == 'y
     except:
         print(u'Instalando o Redis-Server')
         os.system('pip3 install redis')
+    try:
+        import diskcache
+    except:
+        print(u'Instalando o diskcache')
+        os.system('pip3 install diskcache')
 
     os.system('clear')
     print(u'Instalação concluída!')
@@ -21,7 +26,7 @@ if input(u'Deseja iniciar instalação do Timotty? [Y/N]\n\n>>> ').lower() == 'y
     os.system('clear')
 
     if input('Deseja iniciar Timotty? [Y/N]\n\n> '):
-        os.system('python3 bot.py')
+        os.system('python3 cybot/bot.py')
     else:
         os.system('clear')
         sys.exit()

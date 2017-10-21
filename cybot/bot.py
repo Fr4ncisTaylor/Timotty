@@ -1,19 +1,22 @@
 # -*- coding: utf-8 -*-
-
 import json
 import os
 import requests
 import time
-from threading import Thread
+from threading import Thread, local
 from pprint import pprint
 import metodos
 from comandos import comandos
 import config
 import sys
 from mensagens import creditos
+from diskcache import Cache
 
-# definindo BOT
+# Definindo BOT
 bot = metodos
+# Definindo cache para bot_is_on
+cache = Cache('/tmp/mycachedir')
+cache['bot_is_on'] = True
 # Classe Threads que manterá o bot on
 
 
@@ -57,9 +60,8 @@ class Th(Thread) :
         if (time.time() - msg['date']) > config.timer :
             return
 
-        if content_type == 'text':
-            comandos(msg)## importando os comandos para dentro do bot
-            return
+        comandos(msg, content_type) ## Importando os comandos para dentro do bot
+        return
 
 
 dados_bot = bot.getMe()
@@ -78,6 +80,7 @@ while True :
 
     for (i, msgs) in enumerate(threads[-1]['result']) :
         t = Th(msgs)
+        print('th', i)
         t.start()
 
         offset = int(msgs['update_id']) + config.update_id
