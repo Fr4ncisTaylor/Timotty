@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import mensagens
-from inline import inline_keyboad
+from inline import inline_keyboard
 from metodos import *
 
 m = mensagens
