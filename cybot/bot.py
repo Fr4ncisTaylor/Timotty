@@ -15,7 +15,7 @@ from diskcache import Cache
 # Definindo BOT
 bot = metodos
 # Definindo cache para bot_is_on
-cache = Cache('/tmp/mycachedir')
+cache = Cache('tmp/mycachedir')
 cache['bot_is_on'] = True
 # Classe Threads que manterá o bot on
 

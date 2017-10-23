@@ -11,7 +11,7 @@ from diskcache import Cache
 redis = redis.StrictRedis(host=config.redis['host'], port=config.redis['port'], db=config.redis['db'])
 
 ### Definindo cache para bot_is_on
-cache = Cache('/tmp/mycachedir')
+cache = Cache('tmp/mycachedir')
 
 ### Plugins
 def comandos(msg, content_type):
