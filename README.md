@@ -2,9 +2,12 @@
 <p align="center"><img src="images.png" alt="Timotty"></p>
 <p align="center"><a href="https://t.me/TimottyBot">TimottyBot</a></p>
 <p align="center"><a href="https://t.me/RoboTaylor">Suporte</a></p>
-<p align="center">⚜️<strong>Versão 1.3 | Python 2 ou 3+</strong></p>
+<p align="center"><strong>Versão 1.4</strong></p>
 
 * * *
+[![PyPI](https://img.shields.io/badge/python-3.6-blue.svg)]()
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+
 ## Informações
 Timotty foi desenvolvido com as Threads nativa da linguagem Python.
 Ele ultiliza os métodos da API Telegram, que você pode encontar no arquivo `/cybot/metodos.py`.
