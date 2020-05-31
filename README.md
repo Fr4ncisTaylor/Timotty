@@ -1,4 +1,4 @@
-# Timotty-Master
+
 <p align="center"><img src="images.png" alt="Timotty"></p>
 <p align="center"><a href="https://t.me/TimottyBot">TimottyBot</a></p>
 <p align="center"><a href="https://t.me/RoboTaylor">Suporte</a></p>
